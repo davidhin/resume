@@ -294,9 +294,23 @@
   \medskip\normalsize
 }
 
-\newcommand{\cveventsmall}[3]{%
+\newcommand{\cveventalt}[4]{%
+  {\large\color{emphasis}#1\par}
+  \smallskip\normalsize
+  \ifstrequal{#2}{}{}{
+  \textbf{\color{accent}#2}\par
+  \smallskip}
+  {\footnotesize\color{accent}\faCalendar~#3}
+  {\footnotesize\color{accent} | \faWrench ~#4}
+  \medskip\normalsize
+}
+
+
+\newcommand{\cveventsmall}[4]{%
   {\normalsize\color{accent}#1}
   \footnotesize{(#2)}
+  \par
+  {\textbf{\color{accent}#4}}
   \par
   {\footnotesize\color{palegrey}Technologies Used: #3}
   \normalsize
