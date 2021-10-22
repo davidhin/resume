@@ -1,0 +1,143 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\usepackage{paracol}
+\usepackage[default]{lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{555555}
+\definecolor{PaleGrey}{HTML}{777777}
+% \colorlet{name}{black}
+\colorlet{tagline}{black}
+\colorlet{heading}{black}
+\colorlet{headingrule}{black}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{black}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\colorlet{palegrey}{PaleGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{David Hin}
+\personalinfo{%
+  \email{hello@davidhin.com}
+  \phone{+61424875767}
+  \location{Adelaide, SA}
+  \github{davidhin}
+}
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+% ---------------------------------------------------------------- %
+%                            EXPERIENCE                            %
+% ---------------------------------------------------------------- %
+\cvsection{Experience}
+
+\cveventsmall{Development of an automated tool for detecting C/C++ software vulnerabilities}{Mar 2021 -- Oct 2021}{Python, Docker, PyTorch / PyTorch Lightning}
+\begin{itemize}
+\item Conceptualised and implemented an automated software vulnerability detection tool for C/C++ code focused on usability and explainability. The tool leveraged graph neural network architectures to outperform the state-of-the-art model by 104\%.
+\item \yearbold{Hin, D.}, Kan, A., Chen, H. and Babar, M.A., 2021. LineVD: Statement-level Vulnerability Detection using Graph Neural Networks. \textit{Under Review}.
+\end{itemize}
+\divider
+
+\cveventsmall{Development of an automated pipeline for software vulnerability assessment in Java}{Jun 2020 -- Jan 2021}{Python, Java, Keras/Tensorflow}
+\begin{itemize}
+\item Designed an automated software vulnerability assessment pipeline for Java code using deep learning, achieving 50\% higher accuracy and requiring 6.3x less time to train compared to baseline models.
+\item Le, T.H., \yearbold{Hin, D.}, Croft, R. and Babar, M.A., 2021. DeepCVA: Automated Commit-level Vulnerability Assessment with Deep Multi-task Learning. In \textit{Proceedings of the 36th IEEE/ACM International Conference on Automated Software Engineering} (CORE A*)
+\end{itemize}
+\divider
+
+\cveventsmall{Development of web application for tracking of vulnerable software components}{Mar 2020 -- Nov 2020}{React, Node.js, Express, MongoDB, Google Cloud Services, Docker, HTML5/CSS3}
+\begin{itemize}
+\item Built and deployed a microservice-based infrastructure and front-end web application for innovatively tracking and analysing vulnerable software components.
+\item Awarded \$10,000 by the Cybersecurity Cooperative Research Centre.
+\item This project achieved the highest mark for final year Honours project for Bachelor of Engineering (Software) at the University of Adelaide (2020).
+\end{itemize}
+\divider
+
+\cveventsmall{Analysis and visualisation of online security vulnerability discussions}{Jan 2020 -- Mar 2020}{Python, SQL, Scikit-Learn, Docker}
+\begin{itemize}
+\item Leveraged topic modeling and comprehensive data analysis techniques to extract a new taxonomy of thirteen security vulnerability discussion topics from > 20GB of data from online sites, while providing insightful visualisations.
+\item Le, T.H., Croft, R., \yearbold{Hin, D.} and Ali Babar, M.A., 2021. A Large-scale Study of Security Vulnerability Support on Developer Q\&A Websites. In \textit{Evaluation and Assessment in Software Engineering} (CORE A)
+\end{itemize}
+\divider
+
+
+\cveventsmall{Development of interactive visualisation-based application for spectroscopy analysis}{Jul 2018 -- Feb 2019}{R, RStudio, R Shiny}
+\begin{itemize}
+\item Created an app to analyse data collected from custom built biological autofluorescence spectroscopy equipment, involving manipulation of raw signal data, unsupervised learning, and dimension reduction techniques.
+\item Work done as Associate Investigator for Centre for Nanoscale BioPhotonics.
+\end{itemize}
+
+
+\switchcolumn
+% ---------------------------------------------------------------- %
+%                       SKILLS AND COMPETENCIES                    %
+% ---------------------------------------------------------------- %
+\cvsection{Skills \& Competencies}
+
+\smallsubsection{Software Development}
+\cvtag{Python}\cvtag{C}\cvtag{C++}\cvtag{Java}\cvtag{Node.js}\\
+\cvtag{React}\cvtag{SQL}\cvtag{Ruby}\cvtag{Git}\\
+\cvtag{Firebase}
+\cvtag{Amazon Web Services}\\
+\cvtag{Google Cloud Services}
+\medskip
+
+\smallsubsection{Data Science}
+\cvtag{Pandas}
+\cvtag{Scikit-learn}
+\cvtag{PyTorch}
+\cvtag{Keras}
+\cvtag{Tensorflow}
+\cvtag{R/RStudio}
+\cvtag{Excel}\\
+\cvtag{High-performance computing (HPC)}
+\medskip
+
+\smallsubsection{Soft skills}
+\cvtag{Cross-team collaboration}
+\cvtag{Mentoring}
+\cvtag{Project management}
+\cvtag{Presentation skills}
+
+% ---------------------------------------------------------------- %
+%                             EDUCATION                            %
+% ---------------------------------------------------------------- %
+\cvsection{Education}
+\cvevent{Bachelor of Engineering (Software) with First-class Honours}{University of Adelaide}{Feb 2017 -- Dec 2020}{}
+
+% ---------------------------------------------------------------- %
+%                            ACHIEVEMENTS                          %
+% ---------------------------------------------------------------- %
+\cvsection{Achievements}
+\begin{itemize}
+  \item \yearbold{2015} - Govhack: International Digital Humanities Hack, N3xGen South Australian Champion
+  \item \yearbold{2016} - Dux of The Heights School, SA
+  \item \yearbold{2017} - University of Adelaide: Executive\\ Dean’s Award for Academic Excellence
+  \item \yearbold{2018} - University of Adelaide: Executive\\ Dean’s Award for Academic Excellence
+  \item \yearbold{2018} - Australian Oracle User Group Prize, for achieving highest score in Web and Database Computing course
+  \item \yearbold{2019} - Cybersecurity Cooperative Research Centre Summer Scholarship
+  \item \yearbold{2020} - University of Adelaide: Executive\\ Dean’s Award for Academic Excellence
+  \item \yearbold{2020} - Cybersecurity Cooperative Research Centre Honours Scholarship
+  \item \yearbold{2020} - Lifelenz Prize, for achieving the highest Honours mark in Bachelor of Engineering (Software)
+  \item \yearbold{2021} - Cybersecurity CRC PhD Top-Up Scholarship
+\end{itemize}
+
+\end{paracol}
+\end{document}
