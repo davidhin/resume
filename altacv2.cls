@@ -19,7 +19,7 @@
 
 %%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{altacv}[2021/10/04 AltaCV v1.6.3, yet another alternative class for a resume/curriculum vitae.]
+\ProvidesClass{altacv2}[2021/10/04 AltaCV v1.6.3, yet another alternative class for a resume/curriculum vitae.]
 
 %% v1.1: Optionally load academicons
 %% v1.4: Nope, academicons is unnecessary; fontawesome5 has \faOrcid.
